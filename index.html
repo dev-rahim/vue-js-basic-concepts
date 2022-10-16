@@ -6,9 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic Of Vue Js</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
 </head>
 
 <body>
+    <div id="heading">
+        {{title}}
+    </div>
+
+    <script>
+        const { createApp } = Vue
+        createApp({
+            data() {
+                return {
+                    title: 'Hello Vue JS'
+                }
+            }
+        }).mount('#heading')
+
+    </script>
 
 </body>
 
